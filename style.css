@@ -100,6 +100,10 @@
     text-shadow: 0px 4px 6.4px rgba(0, 0, 0, 0.30);
   }
 
+  .header__title_img {
+    width: 100%;
+  }
+
   .header__subtitle {
     /* color: #FFF;
     font-size: 16px;
@@ -107,6 +111,7 @@
     font-weight: 700;
     line-height: 110%;
     margin-bottom: 20px; */
+    width: 100%;
 
   }
 
@@ -126,6 +131,11 @@
     justify-content: center;
     gap: 10px;
     margin-bottom: 10px;
+    color: #888;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
   }
 
   .content {
@@ -135,11 +145,12 @@
 
   .content__man {
     background-image: url(./src/img/man2.png);
-    height: 375px;
+    height: 371px;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
     z-index: unset;
+
   }
 
   /* .content__man::before {
@@ -229,16 +240,15 @@
   }
 
   .content__title {
+
     margin: 0 auto;
     text-align: center;
     background-image: url(./src/img/border.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    color: #FFF;
     width: 153px;
     height: 24px;
-    font-family: Gilroy;
     font-size: 16px;
     font-style: italic;
     padding-top: 2px;
@@ -248,7 +258,13 @@
   }
 
   .content__subtitle {
+    margin-top: 10px;
     text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin-bottom: 10px
   }
 
   .content__cards {
@@ -314,7 +330,7 @@
 
   .content__card span {
     font-size: 12px;
-    font-family: GilroyLight, sans-serif;
+
   }
 
   .content__card-text {
@@ -495,13 +511,14 @@
   }
 
   .footer {
-    margin: 20px;
-    padding: 20px 20px;
+    margin: 20px 0;
+    padding: 20px 0;
     padding-bottom: 0px;
     background-color: black;
     color: #797979;
     text-align: center;
     font-size: 10px;
+
   }
 
   .footer__text ul {
