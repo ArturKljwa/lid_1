@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "GilroyLight";
-  src: url("./src/fonts//Gilroy-Light.ttf") format("truetype");
+  src: url("./src/fonts/Gilroy-Light.ttf") format("truetype");
 }
 
 *,
@@ -24,7 +24,7 @@
 }
 
 .btn-2_colored {
-  color: rgb(212, 79, 79);
+  color: black;
 }
 
 @media (max-width: 450.999px) {
@@ -48,7 +48,7 @@
     animation-direction: alternate;
     animation-timing-function: linear;
     position: absolute;
-    width: 100%;
+    width: 65%;
     height: 700px;
     background-repeat: no-repeat;
     top: 0;
@@ -101,12 +101,13 @@
   }
 
   .header__subtitle {
-    color: #FFF;
+    /* color: #FFF;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
+
   }
 
   .header__time {
@@ -228,25 +229,22 @@
   }
 
   .content__title {
-    /* position: relative;
-    top: -15px;
-    left: 0; */
-    width: 168px;
-    height: 24px;
-    border-radius: 5px;
-    box-shadow: 0px -4px 6.8px 0px rgba(0, 0, 0, 0.50) inset;
     margin: 0 auto;
-    fill: rgba(217, 90, 90, 0.00);
-    stroke-width: 1px;
-    stroke: #0FF;
-    border: 1px solid rgba(0, 255, 255, 1);
     text-align: center;
+    background-image: url(./src/img/border.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     color: #FFF;
+    width: 153px;
+    height: 24px;
     font-family: Gilroy;
     font-size: 16px;
     font-style: italic;
+    padding-top: 2px;
     font-weight: 500;
-    line-height: 110%
+    line-height: 110%;
+
   }
 
   .content__subtitle {
@@ -271,6 +269,7 @@
   }
 
   .content__card_icon {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -282,6 +281,21 @@
 
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.50);
 
+  }
+
+  .content__card_icon::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 4px;
+    background: #0FF;
+    bottom: -4px;
+    left: 45%;
+  }
+
+  .content__card_icon_gift::before {
+    display: none;
   }
 
   .content__card_descr {
@@ -520,9 +534,7 @@
     margin-top: 10px;
   }
 
-  .popup__descr_text {
-    color: rgb(212, 79, 79);
-  }
+  .popup__descr_text {}
 
   /*
   .popup_descr::before {
@@ -696,7 +708,7 @@
     color: #0B0B0D;
     text-transform: uppercase;
     background-color: #10FFFF;
-    padding: 18px 80px;
+    padding: 18px 50px;
     border-radius: 10px;
     outline: none;
     position: relative;
