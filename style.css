@@ -111,8 +111,18 @@
     font-weight: 700;
     line-height: 110%;
     margin-bottom: 20px; */
-    width: 100%;
+    width: 60%;
 
+  }
+
+  .arrow {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-image: url('./src/img/Up.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .header__time {
@@ -174,10 +184,10 @@
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: linear; */
+    animation-timing-function: linear;
     top: 237px;
     left: -4px;
-    z-index: auto;
+    z-index: auto; */
 
   }
 
@@ -196,17 +206,18 @@
     height: 250px;
     position: relative;
     opacity: 1;
-    /*background-size: cover;
+    /*background-size: cover; */
 
-     animation-name: livet2;
+    animation-name: livet2;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    background-image: url('./src/img/cor_2.svg');  */
+    background-image: url('./src/img/Билет 3.svg');
+    background-repeat: no-repeat;
     z-index: -100;
 
-    top: -124px;
+    top: 0px;
     right: -189px;
   }
 
@@ -214,11 +225,11 @@
 
   @keyframes livet2 {
     0% {
-      top: 292px;
+      top: -30px;
     }
 
     100% {
-      top: 307px;
+      top: 60px;
     }
   }
 
